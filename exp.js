@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = JSON.parse(rawData);
         console.log('Распарсенные данные:', data);
         
+        // ОТЛАДКА: добавьте здесь
+        console.log('Банк из данных:', data.bank);
+        console.log('Тип:', typeof data.bank);
+        console.log('Длина:', data.bank ? data.bank.length : 'нет данных');
+        
         if (document.querySelector('.text-name')) {
             document.querySelector('.text-name').textContent = data.name || 'Не указано';
             console.log('Имя установлено:', data.name);
@@ -41,6 +46,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 `${balance} ₽ ➜ ${newBalance} ₽`;
         }
         
+        // Определите cardType до использования
+        let cardType = 'Black';
+        if (data.bank) {
+            const bankCards = {
+                'sber': 'SberBlack',
+                'tinkoff': 'Tinkoff Black', 
+                
+                'ozon': 'Ozon Карта'
+            };
+            cardType = bankCards[data.bank] || 'Black';
+        }
 
         const bankLogos = {
             'sber': 'sber.png',
@@ -52,7 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgElement = document.querySelector('img');
         const imgBox = document.querySelector('.img-box');
 
-        // Сначала проверяем, что элементы существуют
+        console.log('Логотип файл:', logoFile);
+        console.log('imgElement найден:', !!imgElement);
+        console.log('imgBox найден:', !!imgBox);
+
         if (!imgElement) {
             console.error('Элемент img не найден!');
         }
@@ -60,10 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Элемент .img-box не найден!');
         }
 
-        // Проверяем какой банк выбран
         console.log('Выбранный банк:', data.bank);
 
-        // Меняем стили в зависимости от банка
         if (data.bank === 'sber') {
             if (imgElement) {
                 imgElement.style.width = '110px';
@@ -74,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Установлен цвет: green');
             }
         } 
-        else if (data.bank === 'tinkoff') {
+        else if (data.bank === 'tinkoff' || data.bank === 'tb') {
             if (imgElement) {
                 imgElement.style.width = '90px';
                 imgElement.style.height = '90px';
@@ -95,24 +112,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        // Устанавливаем логотип (это должно быть ВНЕ условий if для банков)
         if (imgElement) {
             imgElement.src = logoFile;
             imgElement.alt = cardType + ' логотип';
             console.log('Логотип установлен:', logoFile);
         }
         
-        // Очищаем данные после использования
         localStorage.removeItem('checkData');
         
     } catch (error) {
         console.error('Ошибка парсинга данных:', error);
+        console.error('Сырые данные:', rawData);
+        
         if (document.querySelector('.text-name')) {
             document.querySelector('.text-name').textContent = 'Ошибка данных';
         }
     }
-}); // ← ЭТА закрывающая скобка была пропущена
-
-console.log('Банк из данных:', data.bank);
-console.log('Тип:', typeof data.bank);
-console.log('Длина:', data.bank.length);
+    
+});
