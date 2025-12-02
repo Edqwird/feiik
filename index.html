@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Фейк чек</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="title">
+        <div class="hello">Фейк чек</div>
+        <div class="about">Прежде чем создать фейк чек, прочитайте правила использования а так же последствия</div>
+    </div>
+
+    <div class="titleFife">
+        <div class="aboutText">Создание чека</div>
+
+        <div class="boxChat">
+            <div class="widthBox">
+                <div class="boxis">
+                    <input class="box-name" type="text" required placeholder="Фамилия имя, пример Иван.Т">
+                </div>
+
+                <div class="boxis">
+                    <input class="box-balance" type="text" required placeholder="Фейковый ваш счет, например 2955">
+                </div>
+
+                <div class="boxis">
+                    <input class="box-sum" type="text" required placeholder="Сумма вашей покупки">
+                </div>
+                
+                <div class="boxis">
+                    <input class="box-number" type="text" required placeholder="Номер телефона человека">
+                </div>
+                <div class="boxiss">
+                    <div class="text-bank">Выберите нужный банк на который идет перевод</div><br><br>
+                    <input type="radio" id="box-bank-sber" name="bank" value="sber" required>
+                    <label for="box-bank-sber">Сбербанк</label>
+                    
+                    <input type="radio" id="box-bank-tb" name="bank" value="tinkoff" required>
+                    <label for="box-bank-tb">Т-банк</label>
+                    
+                    <input type="radio" id="box-bank-ozon" name="bank" value="ozon" required>
+                    <label for="box-bank-ozon">Ozon</label>
+                </div>
+
+                <div class="button-message">🚀 Создать чек</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src='ex.js'></script>
+</body>
+</html>

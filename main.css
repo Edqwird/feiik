@@ -1,0 +1,96 @@
+html {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40vh;
+    width: 100%;
+    gap: 20px;
+}
+
+.hello {
+    font-family: undo;
+    font-size: 2.5rem;
+}
+
+.about {
+    width: 350px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: undo1;
+
+}
+
+@font-face {
+    font-family: "undo";  
+    src: url("unbounded-semibold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "undo1";  
+    src: url("unbounded-extralight.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+.widthBox {
+    display: flex;
+    margin-top: 50px;
+    height: auto;
+    background: #d6d6d6;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 10px 0 0 rgb(185, 185, 185);
+    border-radius: 2rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.aboutText {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: undo;
+}
+
+.box-name, .box-bank, .box-balance, .box-number, .box-sum {
+    width: 90%;
+    min-width: 300px;
+    height: 100%;
+    min-height: 50px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.button-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    min-height: 50px;
+    border-radius: 1rem;
+    font-family: undo;
+    background: #fedd2b;
+    border: 1px solid black;
+}
+/* .boxiss {
+    display: flex;
+    flex-direction: row;
+} */

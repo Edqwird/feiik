@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #1c1c1c;
+}
+
+.text-close {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    font-family: sans-serif;
+    color: #4486ec;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.img-box {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 4rem;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+}
+
+.img-boxbox {
+    width: 10px;
+    height: 10px;
+    background: grey;
+}
+
+.text-name {
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.text-number {
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color: rgb(168, 168, 168);
+}
+
+.sum {
+    font-size: 1.5rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
