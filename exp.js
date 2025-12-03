@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const bankCards = {
                 'sber': 'SberBlack',
                 'tinkoff': 'Tinkoff Black', 
-                
                 'ozon': 'Ozon Карта'
             };
             cardType = bankCards[data.bank] || 'Black';
@@ -61,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const bankLogos = {
             'sber': 'sber.png',
             'tinkoff': 'tb.png',
+            'tb': "tb.png",
             'ozon': 'ozon.png'
         };
  
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 imgElement.style.height = '110px';
             }
             if (imgBox) {
-                imgBox.style.background = 'green';
+                imgBox.style.background = '#1fa037';
                 console.log('Установлен цвет: green');
             }
         } 
@@ -130,3 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
 });
+
+document.querySelector('.go').onclick = function() {
+    window.location.href = 'https://www.tbank.ru/mybank/'
+};
+
+document.querySelector('.text-close').onclick = function() {
+    window.location.href = 'https://www.tbank.ru/mybank/'
+};
