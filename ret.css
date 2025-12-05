@@ -1,0 +1,245 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #f6f6f6;
+}
+
+
+body {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.text-close {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    font-family: sans-serif;
+    font-weight: 550;
+    justify-content: center;
+}
+
+.title {
+    width: 90%;
+    height: 520px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.158);
+}
+
+.sch-card {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sum-text {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: grey;
+}
+
+.sum {
+    font-size: 2rem;
+    color: black;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: sans-serif;
+    font-weight: bold;
+    /* font-weight: bold;   */
+}
+
+
+.boxies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: #e7eaf3 ;
+    border-radius: 2rem;
+}
+
+.img-number {
+    width: 80px;
+}
+
+.text-name {
+    font-size: 0.9rem;
+    font-family: ftr;
+    color: black;
+}
+
+.text-about {
+    font-size: 0.85rem;
+    font-family: sans-serif;
+    color: #cbcbcb;
+}
+
+.text-number {
+    margin-top: -15px;
+    font-size: 1rem;
+    font-family: ftr;
+    color: black;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.boxOne {
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: #e7eaf3;
+    border-radius: 2rem;
+}
+
+.imgBook {
+    width: 90px;
+}
+
+.textOne {
+    margin-top: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 80px;
+    color: #1b7cdd;
+}
+
+.boxTwo {
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: #e7eaf3;
+    border-radius: 2rem;
+}
+
+.imgStar {
+    width: 90px;
+}
+
+.textTwo {
+    margin-top: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 67px;
+    color: #1b7cdd;
+}
+
+.go {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    justify-content: center;
+    background: #fedd2b;
+    border-radius: 0.9rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "ftr";  
+    src: url("Programme-Pan-Regular.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "fto";  
+    src: url("Programme-Pan-Bold.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "jos";  
+    src: url("vivoSansGlobal-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "jis";  
+    src: url("vivoSansComp600_0.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}

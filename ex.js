@@ -23,5 +23,5 @@ document.querySelector('.button-message').onclick = function() {
 
     localStorage.setItem('checkData', JSON.stringify(data));
  
-    window.location.href = 'core.html';
+    window.location.href = 'src.html';
 };

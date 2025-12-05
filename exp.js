@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = JSON.parse(rawData);
         console.log('Распарсенные данные:', data);
         
-        // ОТЛАДКА: добавьте здесь
         console.log('Банк из данных:', data.bank);
         console.log('Тип:', typeof data.bank);
         console.log('Длина:', data.bank ? data.bank.length : 'нет данных');
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 `${balance} ₽ ➜ ${newBalance} ₽`;
         }
         
-        // Определите cardType до использования
+        
         let cardType = 'Black';
         if (data.bank) {
             const bankCards = {
