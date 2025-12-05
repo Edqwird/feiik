@@ -243,8 +243,8 @@ body {
 
 .card {
     width: 97%;
-    height: 35px;
-    border-radius: 0.5rem;
+    height: 43px;
+    border-radius: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
