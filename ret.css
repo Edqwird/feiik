@@ -17,25 +17,25 @@ body {
 }
 
 .text-close {
-    height: 30px;
-    margin-bottom: 20px;
+    height: 50px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     /* width: 100%; */
     font-family: sans-serif;
-    font-weight: 550;
     justify-content: center;
+    font-size: 1.05rem;
 }
 
 .title {
     width: 90%;
-    height: 520px;
+    height: 500px;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     border-radius: 1.5rem;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.158);
 }
@@ -44,7 +44,7 @@ body {
     margin-top: 10px;
     font-size: 0.9rem;
     font-family: sans-serif;
-    color: grey;
+    color: rgb(160, 160, 160);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ body {
     margin-top: 5px;
     font-size: 0.9rem;
     font-family: sans-serif;
-    color: grey;
+    color: rgb(160, 160, 160);
 }
 
 .sum {
@@ -95,7 +95,7 @@ body {
 }
 
 .text-number {
-    margin-top: -15px;
+    margin-top: -12px;
     font-size: 1rem;
     font-family: ftr;
     color: black;
@@ -176,7 +176,7 @@ body {
     display: flex;
     align-items: center;
     width: 90%;
-    height: 50px;
+    height: 55px;
     justify-content: center;
     background: #fedd2b;
     border-radius: 0.9rem;
@@ -220,7 +220,7 @@ body {
 
 @font-face {
     font-family: "ftr";  
-    src: url("Programme-Pan-Regular.otf") format("truetype"); 
+    src: url("Programme-Pan-Light.otf") format("truetype"); 
     font-style: normal; 
     font-weight: normal;
 }
