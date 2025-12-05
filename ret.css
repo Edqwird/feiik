@@ -166,7 +166,8 @@ body {
     font-family: sans-serif;
     text-align: center;
     font-size: 0.8rem;
-    width: 67px;
+    width: 80px;
+    flex-wrap: wrap;
     color: #1b7cdd;
 }
 
