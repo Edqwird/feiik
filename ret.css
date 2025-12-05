@@ -17,7 +17,8 @@ body {
 }
 
 .text-close {
-    height: 100px;
+    height: 30px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     /* width: 100%; */
