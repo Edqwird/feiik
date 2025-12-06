@@ -61,7 +61,7 @@ body {
 .sum-text::after {   
     position: absolute;
     content: '';
-    top: 11px;
+    top: 50%;
     left: 0;
     width: 40%;
     height: 1px;
