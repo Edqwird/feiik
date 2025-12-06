@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (document.querySelector('.sum')) {
-            document.querySelector('.sum').textContent = '-' + (data.sum || '0') + ' ₽';
+            document.querySelector('.sum').textContent = '-' + (data.sum || '0') + ' <span class="ruble">₽</span>';
         }
         
         if (document.querySelector('.sum-text')) {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const sum = parseFloat(data.sum) || 0;
             const newBalance = balance - sum;
             document.querySelector('.sum-text').textContent = 
-                `${balance} ₽ ➜ ${newBalance} ₽`;
+                `${balance} <span class="ruble">₽</span> 🠒 ${newBalance} <span class="ruble">₽</span>`;
         }
         
         
